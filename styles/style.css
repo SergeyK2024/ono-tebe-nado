@@ -4,9 +4,10 @@
   display: grid;
   grid-template-columns: 1fr 150px 1fr;
   align-items: center;
-  padding: 92px 24px 96px 24px;
+  padding: 92px 24px;
   max-width: 1052px;
   margin: auto;
+  
 
   background-color:#d8c871;
     
@@ -14,8 +15,10 @@
 
 .header__menu {
   display: grid;
-  padding: 44px 39px 39px 26.52px;
+  padding: 44px 36px 39px 26.52px;
   font-size: 18px;
+  
+  
   
 }
 
@@ -30,6 +33,7 @@
 .header__links-list-item {
   /* меняем разделитель с целого на полый */
   list-style: circle;
+  
 
 }
 
@@ -51,7 +55,7 @@
   display: block;
   justify-self: center;
   align-self: center;
-  width: 129px;
+  width: 137px;
 
 }
 
@@ -61,16 +65,13 @@
 }
 
 .address {
-  padding-right: ;
-  width: 240.52px;
+  padding: 5px 28px 2px 185px;
   font-size: 18px;
-  background-color: antiquewhite;
-  }
+}
 
 .header__address {
-  display: flex;
-  font-size: 18px;
-  min-width: 240px;
+ 
+
   }
 
 
