@@ -4,12 +4,9 @@
   display: grid;
   grid-template-columns: 1fr 150px 1fr;
   align-items: center;
-  padding: 92px 24px;
+  padding: 91px 24px;
   max-width: 1052px;
   margin: auto;
-  
-
-  background-color:#d8c871;
     
 }
 
@@ -17,33 +14,34 @@
   display: grid;
   padding: 44px 36px 39px 26.52px;
   font-size: 18px;
-  
-  
-  
+   
 }
 
 
 .header__links-list {
   display: grid;
   grid-template-columns: 98px 184px 108px;
-  
-   
+    
 }
 
 .header__links-list-item {
   /* меняем разделитель с целого на полый */
   list-style: circle;
-  
-
+    
 }
 
 .header__links-list-item_no-bullit {
   /* убираем разделитель */
   list-style: none;
+  
 
 }
 
 .header__link {
+  /* убираме подчёркивание ссылок */
+  text-decoration: none;
+  /* добавляем полосу  */
+  border-bottom: 1px solid #000;
 
 }
 
@@ -65,80 +63,93 @@
 }
 
 .address {
-  padding: 5px 28px 2px 185px;
+  padding: 5px 0px 5px 185px;
   font-size: 18px;
-}
+  line-height: 1.4;
+ }
 
 .header__address {
- 
-
+  font-style: normal;
   }
-
-
-
-
-/* .cover {
-  background-image: url(../images/cover.jpg);
-  position: relative;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-
-}
 
 .overlay {
   position: absolute;
-  z-index: 1;
-  width: 1100px;
-  height: 757px;
-  opacity: 60%;
-  background: rgb(0, 0, 0);
-
-}
-
-.cover__title {
-  position: absolute;
-  width: 1000px;
-  height: 355px;
-  left: 50px;
-  right: 50px;
-  top: 165px;
-  bottom: 237px;
-}
-
-  /* убераем булиты или разделитель  */
-  list-style: none;
-  /* переводит заголовок в верхний регистр */
-  text-transform: uppercase;
- */
-
-.aligned-text {
-
-}
-
-.aligned-text_center {
-
-}
-.aligned-text_right {
-
+  inset: 0;
+  background-color: #000;
+  opacity: 60%;     
 }
 
 .letter-spacing-extended {
-
+  letter-spacing: .6em;
 }
 
 .no-letter-spacing {
+  letter-spacing: 0;
+}
 
+.cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 165px 50px 50px; 
+  background-image: url(../images/cover.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.cover__title {
+  margin-bottom: 136px;
+  font-weight: 700;
+  font-size: 100px;
+  letter-spacing: .3em;
+  line-height: 115px;
+  text-transform: uppercase;
+  color: #fff;
+  z-index: 1;
+}
+
+.aligned-text {
+  display: block;
+  line-height: 100px;
+  margin-top: 20px;
+}
+
+.aligned-text__center {
+  text-align: center;
+  
+}
+.aligned-text__right {
+  text-align: end;
 }
 
 .cover__description {
-
+  display: flex;
+  color: #fff;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 79px;
+  text-transform: uppercase;
+  z-index: 1;
+  
 }
 
 .cover__description-text {
-
+  font-size: 22px;
+  line-height: 29px;
+  text-transform: uppercase;
+  word-spacing: .85em;
+  color: #fff;
+  
 }
 
 .bet-button {
+  padding: 12px 32px;
+  background-color: transparent;
+  font-family: inherit;
+  /* наследуй шрифт из родителей, кнопка может не наследовать шрифт */
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid currentColor;
 
 }
